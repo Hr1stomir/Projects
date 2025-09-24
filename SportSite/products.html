@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ✅ Меню -->
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo2.png" width="125px"></a>
+      </div>
+      <nav>
+        <ul id="MenuItems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a <li onclick="scrollToBottom()">Contact</a></li> 
+          <li><a href="account.php">Account</a></li>
+        </ul>
+      </nav>
+      <a href="cart.php"><img src="images/shopping-cart.png" width="30px" height="30px"></a>
+    </div>
+  </div>
+
+  <!-- ✅ Продукти -->
+  <div class="container">
+    <h1>Our Products</h1>
+    <div class="row">
+      
+        <div class="col-4">
+          <img src="images/product-1.jpg" alt="Red Printed T-Shirt">
+          <h4>Red Printed T-Shirt</h4>
+          
+          <p>$50.00</p>
+          <form action="add_to_cart.php" method="POST" target="hiddenFrame">
+            <input type="hidden" name="product" value="Red Printed T-Shirt">
+            <input type="hidden" name="price" value="50.00">
+            <button type="submit" class="btn">Add to Cart</button>
+          </form>
+        </div>
+        
+
+        <div class="col-4">
+          <img src="images/product-2.jpg" alt="HRX Sports Shoes">
+          <h4>HRX Sports Shoes</h4>
+          
+          <p>$75.00</p>
+          <form action="add_to_cart.php" method="POST" target="hiddenFrame">
+            <input type="hidden" name="product" value="HRX Sports Shoes">
+            <input type="hidden" name="price" value="75.00">
+            <button type="submit" class="btn">Add to Cart</button>
+          </form>
+        </div>
+        
+
+        <div class="col-4">
+          <img src="images/product-3.jpg" alt="HRX Gray Trackpants">
+          <h4>HRX Gray Trackpants</h4>
+          
+          <p>$40.00</p>
+          <form action="add_to_cart.php" method="POST" target="hiddenFrame">
+            <input type="hidden" name="product" value="HRX Gray Trackpants">
+            <input type="hidden" name="price" value="40.00">
+            <button type="submit" class="btn">Add to Cart</button>
+          </form>
+        </div>
+        
+
+        <div class="col-4">
+          <img src="images/product-4.jpg" alt="Blue Printed T-Shirt">
+          <h4>Blue Printed T-Shirt</h4>
+          
+          <p>$45.00</p>
+          <form action="add_to_cart.php" method="POST" target="hiddenFrame">
+            <input type="hidden" name="product" value="Blue Printed T-Shirt">
+            <input type="hidden" name="price" value="45.00">
+            <button type="submit" class="btn">Add to Cart</button>
+          </form>
+        </div>
+        
+
+        <div class="col-4">
+          <img src="images/product-5.jpg" alt="Puma Gray Sports Shoes">
+          <h4>Puma Gray Sports Shoes</h4>
+          
+          <p>$95.00</p>
+          <form action="add_to_cart.php" method="POST" target="hiddenFrame">
+            <input type="hidden" name="product" value="Puma Gray Sports Shoes">
+            <input type="hidden" name="price" value="95.00">
+            <button type="submit" class="btn">Add to Cart</button>
+          </form>
+        </div>
+        
+
+        <div class="col-4">
+          <img src="images/product-6.jpg" alt="Black Printed T-Shirt">
+          <h4>Black Printed T-Shirt</h4>
+          
+          <p>$55.00</p>
+          <form action="add_to_cart.php" method="POST" target="hiddenFrame">
+            <input type="hidden" name="product" value="Black Printed T-Shirt">
+            <input type="hidden" name="price" value="55.00">
+            <button type="submit" class="btn">Add to Cart</button>
+          </form>
+        </div>
+        
+
+        <div class="col-4">
+          <img src="images/product-7.jpg" alt="HRX Set of 3 Socks">
+          <h4>HRX Set of 3 Socks</h4>
+          
+          <p>$20.00</p>
+          <form action="add_to_cart.php" method="POST" target="hiddenFrame">
+            <input type="hidden" name="product" value="HRX Set of 3 Socks">
+            <input type="hidden" name="price" value="20.00">
+            <button type="submit" class="btn">Add to Cart</button>
+          </form>
+        </div>
+        
+
+        <div class="col-4">
+          <img src="images/product-8.jpg" alt="Black Fossil Watch">
+          <h4>Black Fossil Watch</h4>
+          
+          <p>$150.00</p>
+          <form action="add_to_cart.php" method="POST" target="hiddenFrame">
+            <input type="hidden" name="product" value="Black Fossil Watch">
+            <input type="hidden" name="price" value="150.00">
+            <button type="submit" class="btn">Add to Cart</button>
+          </form>
+        </div>
+        
+
+        <div class="col-4">
+          <img src="images/product-9.jpg" alt="Black Sportx Watch">
+          <h4>Black Sportx Watch</h4>
+          
+          <p>$130.00</p>
+          <form action="add_to_cart.php" method="POST" target="hiddenFrame">
+            <input type="hidden" name="product" value="Black Sportx Watch">
+            <input type="hidden" name="price" value="130.00">
+            <button type="submit" class="btn">Add to Cart</button>
+          </form>
+        </div>
+        
+
+        <div class="col-4">
+          <img src="images/product-10.jpg" alt="Black HRX Shoes">
+          <h4>Black HRX Shoes</h4>
+          
+          <p>$30.00</p>
+          <form action="add_to_cart.php" method="POST" target="hiddenFrame">
+            <input type="hidden" name="product" value="Black HRX Shoes">
+            <input type="hidden" name="price" value="30.00">
+            <button type="submit" class="btn">Add to Cart</button>
+          </form>
+        </div>
+        
+
+        <div class="col-4">
+          <img src="images/product-11.jpg" alt="Gray Nike Shoes">
+          <h4>Gray Nike Shoes</h4>
+          
+          <p>$100.00</p>
+          <form action="add_to_cart.php" method="POST" target="hiddenFrame">
+            <input type="hidden" name="product" value="Gray Nike Shoes">
+            <input type="hidden" name="price" value="100.00">
+            <button type="submit" class="btn">Add to Cart</button>
+          </form>
+        </div>
+        
+
+        <div class="col-4">
+          <img src="images/product-12.jpg" alt="HRX Black Trackpants">
+          <h4>HRX Black Trackpants</h4>
+          
+          <p>$85.00</p>
+          <form action="add_to_cart.php" method="POST" target="hiddenFrame">
+            <input type="hidden" name="product" value="HRX Black Trackpants">
+            <input type="hidden" name="price" value="85.00">
+            <button type="submit" class="btn">Add to Cart</button>
+          </form>
+        </div>
+        
+    </div>
+  </div>
+
+  <!-- ✅ Скрит iframe -->
+  <iframe name="hiddenFrame" style="display:none;"></iframe>
+
+  <!-- ✅ Footer -->
+  <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col1">
+               <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col2">
+               <img src="images/logo2.png">
+                <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+            </div>
+            <div class="footer-col3">
+               <h3>Useful Links</h3>
+                <ul>
+                    <li class="hight_light">Email:</li>
+                    <li class="hight_light">Phone Number:</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col4">
+               <h3>Follow Us</h3>
+                <ul>
+                    <li class="hight_light">SportShop@gmail.com</li>
+                    <li class="hight_light">0882343126<li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+    </div>
+    
+</div>
+
+</body>
+
+<script>
+    function scrollToBottom() {
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: 'smooth'
+        });
+    }
+</script>
+</body>
+</html>
