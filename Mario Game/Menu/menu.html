@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title>Menu</title>
+        <link rel="stylesheet" href="menustyle.css">
+    </head>
+    <body>
+        
+
+        <div class = "container">
+            <img src="menu.png" class = "menu-icon" onclick = "openmenu()">
+            <div class = "menu-box" id = "menu">
+                <div class = "right-links"> 
+                    <img src = "close.png" onclick = "closemenu()">
+                </div>
+                <div class ="menu-links">
+                
+                    <a href="index.html">Play</a>
+
+                    <a onclick = "location.href = 'controls.html'">Controls</a>
+                    <a onclick = "location.href = 'hints.html'">Hints</a>
+                    <a href="#" onclick="quitGame()">Quit Game</a>
+                     <script>
+                        function quitGame() {
+                        window.close(); // затваря текущия прозорец
+  }
+</script>
+
+
+                </div>
+            </div>
+
+        </div>
+        <script>
+            var menu = document.getElementById("menu");
+
+            function closemenu(){
+                menu.style.top = "-100vh"
+            }
+            function openmenu(){
+                menu.style.top = "17%"
+            }
+            function quitGame() {
+                window.open('', '_self', '');
+                window.close();           
+            }    
+
+
+        </script>
+    </body>
+</html>

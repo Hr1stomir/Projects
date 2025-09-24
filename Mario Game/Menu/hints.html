@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hints</title>
+    <style>
+        .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  padding: 20px 30px;
+  margin: 10px;
+  font-size: 24px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: green;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.4);
+}
+
+button:active {
+  background-color: #388E3C;
+}
+
+.back-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: red;
+  color: white;
+  padding: 30px 40px;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+body {
+    background-image: url('mariotheme.jpg');
+    background-size: cover;
+    background-position: fixed;
+  }
+</style>
+</head>
+<body>
+    <button id="button1">Монетки <a href="https://emoji.gg/emoji/Coin"><img src="https://cdn3.emoji.gg/emojis/Coin.gif" width="34px" height="34px" alt="Coin"></a> </button>
+    <p style = "font-size: 25px; font-style: italic; font-weight: bold;" id="button1-desc">Събирайте монетките в играта, за да получавате точки. Точките се изписват горе в ляво на вашия екран.</p>
+
+    <button id="button2">Мистериозна Кутия <a href="https://emoji.gg/emoji/6408-mario-ques"></a><img src="https://cdn3.emoji.gg/emojis/6408-mario-ques.png" width="34px" height="34px" alt="Mario_Ques"></a></button>
+    <p style = "font-size: 25px; font-style: italic; font-weight: bold;" id="button2-desc">Скачайте под Мистериозните кутии, за да получавате Супер Гъбки или Супер Звездички.</p>
+
+    <button id="button3">Супер Звездички <a href="https://emoji.gg/emoji/1432-superstar"></a><img src="https://cdn3.emoji.gg/emojis/1432-superstar.gif" width="34px" height="34px" alt="SuperStar"></a></button>
+    <p style = "font-size: 25px; font-style: italic; font-weight: bold;" id="button3-desc">Звездичките са най-добрия бонус който може да ви се падне от Мистериозна Кутия. Когато вземете една, героя автоматично става безсмъртен и минава през всяко чудовище.</p>
+
+    <button id="button3">Чудовищата Goomba <a href="https://emoji.gg/emoji/goomba"></a><img src="https://cdn3.emoji.gg/emojis/goomba.gif" width="34px" height="34px" alt="goomba"></a></button>
+    <p style = "font-size: 25px; font-style: italic; font-weight: bold;" id="button3-desc">Внимавайте много от Goomba-та, не ги подценявайте. Скачайте върху тях за да ги избегнете. (понякога ходят и по две заедно)</p>
+
+    <a href="menu.html" class="back-btn">Назад</a>
+
+    <script>
+        function goBack() {
+  location.href = "menu.html";
+}
+
+    </script>
+
+</body>
+</html>

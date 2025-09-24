@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Контроли</title>
+	<style>
+		.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  padding: 20px 30px;
+  margin: 10px;
+  font-size: 24px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: green;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.4);
+}
+
+button:active {
+  background-color: #388E3C;
+}
+
+.back-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: red;
+  color: white;
+  padding: 30px 40px;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+body {
+    background-image: url('mariotheme3.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+
+
+
+	</style>
+</head>
+<body>
+	<button id="button1">Горна Стрелка ⬆</button>
+	<p style = "font-size: 25px; font-style: italic; color: white; font-weight: bold;" id="button1-desc">Този бутон позволява на героя(Super Mario) да прави скок.</p>
+	
+	<button id="button2">Долна Стрелка ⬇</button>
+	<p style = "font-size: 25px; font-style: italic; color: white; font-weight: bold;" id="button2-desc">Този бутон кара героя(Super Mario) да кляка.</p>
+	
+	<button id="button3">Лява Стрелка ⬅</button>
+	<p style = "font-size: 25px; font-style: italic; color: white; font-weight: bold;" id="button3-desc">Този бутон позволява на героя(Super Mario) да ходи ня ляво.</p>
+
+    <button id="button3">Дясна Стрелка ➡</button>
+	<p style = "font-size: 25px; font-style: italic; color: white; font-weight: bold;" id="button3-desc">Този бутон позволява на героя(Super Mario) да ходи ня дясно.</p>
+
+    <a href="menu.html" class="back-btn">Назад</a>
+
+    <script>
+        function goBack() {
+  location.href = "menu.html";
+}
+
+    </script>
+
+</body>
+</html>
